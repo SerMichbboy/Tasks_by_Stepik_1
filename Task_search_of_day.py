@@ -39,4 +39,3 @@ print(thursday)
 print(friday)
 print(saturday)
 print(sunday)
-
