@@ -6,6 +6,8 @@
 # Если итерируемый объект iterable пуст, функция должна вернуть значение None.
 
 
+# Решения:
+
 # Вариант 1:
 
 
@@ -34,8 +36,8 @@ print(get_min_max(iterable1))  # Выведет (0, 9)
 iterable2 = [6, 4, 2, 33, 19, 1]
 print(get_min_max(iterable2))  # Выведет (1, 33)
 
-# Вариант 2: (Через глубокое копирование)
 
+# Вариант 2: (Через глубокое копирование)
 import copy
 
 
@@ -43,7 +45,6 @@ def get_min_max(iterable):
     try:
         copy_obj = copy.deepcopy(iterable)
         return (min(copy_obj), max(iterable))
-
     except:
         return None
 
