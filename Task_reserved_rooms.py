@@ -53,7 +53,7 @@ def is_available_date(booked_dates, date_for_booking):
             return False
     return True
 
-
+# Пример входных данных:
 dates = ['04.11.2021', '05.11.2021-09.11.2021']
 some_date = '06.11.2021'
 print(is_available_date(dates, some_date))
