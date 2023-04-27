@@ -1,4 +1,3 @@
-
 def filterfalse(predicate=None, iterable=None):
     if predicate is None:
         predicate = bool
