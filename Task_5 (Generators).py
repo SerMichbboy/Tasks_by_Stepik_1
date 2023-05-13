@@ -26,13 +26,9 @@ def dates(start, count=None):
                 for _ in range(0, 10000):
                     yield start
                     start += timedelta(days=1)
-    except StopIteration:
+    except:
         pass
 
-    else:
-        for i in range(count):
-            yield start
-            start += timedelta(days=1)
 
 # Варианты входных данных:
 

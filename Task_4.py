@@ -20,6 +20,7 @@ def alternating_sequence(count=None):
         for i in range(1, count + 1):
             yield i*(-1) if i % 2 == 0 else i
 
+
 # Пример
 generator = alternating_sequence()
 
